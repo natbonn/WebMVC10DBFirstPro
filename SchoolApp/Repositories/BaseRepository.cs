@@ -18,6 +18,7 @@ namespace SchoolApp.Repositories
 
         public virtual async Task AddRangeAsync(IEnumerable<T> entities) => await _dbSet.AddRangeAsync(entities);
 
+        // Δεν είναι ο σωστός τρόπος για update - κανονικά στο Service
         public virtual Task UpdateAsync(T entity)    // δεν είναι ασύγχρονη
         {
             _dbSet.Attach(entity);             // εισάγει νέο entity
