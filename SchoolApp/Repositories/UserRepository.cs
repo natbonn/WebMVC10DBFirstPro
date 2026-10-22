@@ -16,6 +16,7 @@ namespace SchoolApp.Repositories
         {
             return await _context.Users
                 .Include(u => u.Role)       // eager loading JOIN = Include
+                .ThenInclude(r => r.Capabilities)
                 .FirstOrDefaultAsync(u => u.Username == username || u.Email == username);
         }
 
