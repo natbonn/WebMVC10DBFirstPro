@@ -1,0 +1,52 @@
+[23-10-2026 17:21:38 INF] User profile is available. Using 'C:\Users\natbo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ [23-10-2026 17:21:39 INF] Now listening on: https://localhost:7079 
+ [23-10-2026 17:21:39 INF] Now listening on: http://localhost:5208 
+ [23-10-2026 17:21:39 INF] Application started. Press Ctrl+C to shut down. 
+ [23-10-2026 17:21:39 INF] Hosting environment: Development 
+ [23-10-2026 17:21:39 INF] Content root path: C:\Users\natbo\source\repos\WebMVC10DBFirstPro\SchoolApp 
+ [23-10-2026 17:21:39 INF] Request starting HTTP/2 GET https://localhost:7079/ - null null 
+ [23-10-2026 17:21:40 INF] Executing endpoint 'SchoolApp.Controllers.HomeController.Index (SchoolApp)' 
+ [23-10-2026 17:21:40 INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller SchoolApp.Controllers.HomeController (SchoolApp). 
+ [23-10-2026 17:21:40 INF] Executing ViewResult, running view Index. 
+ [23-10-2026 17:21:40 INF] Executed ViewResult - view Index executed in 249.384ms. 
+ [23-10-2026 17:21:40 INF] Executed action SchoolApp.Controllers.HomeController.Index (SchoolApp) in 270.9166ms 
+ [23-10-2026 17:21:40 INF] Executed endpoint 'SchoolApp.Controllers.HomeController.Index (SchoolApp)' 
+ [23-10-2026 17:21:40 INF] Request starting HTTP/2 GET https://localhost:7079/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null 
+ [23-10-2026 17:21:40 INF] Request starting HTTP/2 GET https://localhost:7079/lib/jquery/dist/jquery.min.js - null null 
+ [23-10-2026 17:21:40 INF] Request starting HTTP/2 GET https://localhost:7079/SchoolApp.styles.css?v=NpOK1M7QWvL5o23OAEWWTFzRBnSZ6oaZYgIcqQsGL2s - null null 
+ [23-10-2026 17:21:40 INF] Request starting HTTP/2 GET https://localhost:7079/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null 
+ [23-10-2026 17:21:40 INF] Request starting HTTP/2 GET https://localhost:7079/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null 
+ [23-10-2026 17:21:40 INF] Request finished HTTP/2 GET https://localhost:7079/ - 200 null text/html; charset=utf-8 729.4029ms 
+ [23-10-2026 17:21:40 INF] Request starting HTTP/2 GET https://localhost:7079/lib/bootstrap/dist/css/bootstrap.min.css - null null 
+ [23-10-2026 17:21:40 INF] Request starting HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - null null 
+ [23-10-2026 17:21:40 INF] Request starting HTTP/2 GET https://localhost:7079/_vs/browserLink - null null 
+ [23-10-2026 17:21:40 INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Request finished HTTP/2 GET https://localhost:7079/_framework/aspnetcore-browser-refresh.js - 200 14923 application/javascript; charset=utf-8 97.4094ms 
+ [23-10-2026 17:21:40 INF] Sending file. Request path: 'SchoolApp.styles.css'. Physical path: 'C:\Users\natbo\source\repos\WebMVC10DBFirstPro\SchoolApp\obj\Debug\net10.0\compressed\s540ikfqau-{0}-u3ce8ku2l9-u3ce8ku2l9.gz' 
+ [23-10-2026 17:21:40 INF] Sending file. Request path: 'css/site.css'. Physical path: 'C:\Users\natbo\source\repos\WebMVC10DBFirstPro\SchoolApp\obj\Debug\net10.0\compressed\66ge2ivv9s-{0}-b9sayid5wm-b9sayid5wm.gz' 
+ [23-10-2026 17:21:40 INF] Sending file. Request path: 'js/site.js'. Physical path: 'C:\Users\natbo\source\repos\WebMVC10DBFirstPro\SchoolApp\obj\Debug\net10.0\compressed\snzxafazuf-{0}-xtxxf3hu2r-xtxxf3hu2r.gz' 
+ [23-10-2026 17:21:40 INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Request finished HTTP/2 GET https://localhost:7079/SchoolApp.styles.css?v=NpOK1M7QWvL5o23OAEWWTFzRBnSZ6oaZYgIcqQsGL2s - 200 1142 text/css 150.1737ms 
+ [23-10-2026 17:21:40 INF] Request finished HTTP/2 GET https://localhost:7079/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 152.0886ms 
+ [23-10-2026 17:21:40 INF] Request finished HTTP/2 GET https://localhost:7079/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 264 text/javascript 154.1646ms 
+ [23-10-2026 17:21:40 INF] Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\natbo\source\repos\WebMVC10DBFirstPro\SchoolApp\obj\Debug\net10.0\compressed\i7b4cwcesm-{0}-46ein0sx1k-46ein0sx1k.gz' 
+ [23-10-2026 17:21:40 INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Request finished HTTP/2 GET https://localhost:7079/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 181.1486ms 
+ [23-10-2026 17:21:40 INF] Request finished HTTP/2 GET https://localhost:7079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 152.0501ms 
+ [23-10-2026 17:21:40 INF] Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\natbo\source\repos\WebMVC10DBFirstPro\SchoolApp\obj\Debug\net10.0\compressed\rftl3cvc7h-{0}-493y06b0oq-493y06b0oq.gz' 
+ [23-10-2026 17:21:40 INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Request finished HTTP/2 GET https://localhost:7079/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 202.1712ms 
+ [23-10-2026 17:21:40 INF] Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\natbo\source\repos\WebMVC10DBFirstPro\SchoolApp\obj\Debug\net10.0\compressed\2tyat2mso8-{0}-o1o13a6vjx-o1o13a6vjx.gz' 
+ [23-10-2026 17:21:40 INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint' 
+ [23-10-2026 17:21:40 INF] Request finished HTTP/2 GET https://localhost:7079/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 225.4738ms 
+ [23-10-2026 17:21:50 INF] Request starting HTTP/2 GET https://localhost:7079/User/Login - null null 
+ [23-10-2026 17:21:50 INF] Request finished HTTP/2 GET https://localhost:7079/User/Login - 404 null null 19.3811ms 
+ [23-10-2026 17:21:50 INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7079/User/Login, Response status code: 404 
+ 
