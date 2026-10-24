@@ -1,4 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SchoolApp.Data;
 using SchoolApp.Repositories;
 using SchoolApp.Security;
@@ -31,8 +34,24 @@ namespace SchoolApp
                 config.ReadFrom.Configuration(context.Configuration);
             });
 
-            // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            
+            builder.Services.AddControllersWithViews(options => options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));
+
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/User/Login";
+                    options.AccessDeniedPath = "/Home/AccessDenied";
+                    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+                });
+
+            builder.Services.AddAuthorizationBuilder()
+                .SetFallbackPolicy(new AuthorizationPolicyBuilder()
+                    .RequireAuthenticatedUser()
+                    .Build())
+                .AddPolicy("CanInsertTeacher", policy => policy.RequireClaim("Capability", "INSERT_TEACHER"))
+                .AddPolicy("CanViewTeachers", policy => policy.RequireClaim("Capability", "VIEW_TEACHERS"))
+                .AddPolicy("CanDeleteStudent", policy => policy.RequireClaim("Capability", "DELETE_STUDENT"));
 
             var app = builder.Build();
 
@@ -47,9 +66,10 @@ namespace SchoolApp
             app.UseHttpsRedirection();
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
-            app.MapStaticAssets();
+            app.MapStaticAssets().AllowAnonymous();
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}")
