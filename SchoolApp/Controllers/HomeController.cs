@@ -13,7 +13,7 @@ namespace SchoolApp.Controllers
         {
             if (User.Identity?.IsAuthenticated != true)
             {
-                return View();
+                return View();                              // το απλό Landing page
             }
             return RedirectToAction("Index", "User");      // το δικό του Landing page
         }
